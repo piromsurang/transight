@@ -8,11 +8,14 @@ import javax.persistence.GenerationType;
 public class Place {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long placeId;
 
     private String name;
     private long btsId;
     private long mrtId;
+
+    public Place() {
+    }
 
     public Place(String name, long btsId, long mrtId) {
         this.name = name;
@@ -20,8 +23,8 @@ public class Place {
         this.mrtId = mrtId;
     }
 
-    public long getId() {
-        return id;
+    public long getPlaceId() {
+        return placeId;
     }
 
     public String getName() {
