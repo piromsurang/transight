@@ -10,7 +10,7 @@ public class BtsStation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long btsStationId;
+    private long idBtsStation;
 
     private String name;
 
@@ -25,8 +25,8 @@ public class BtsStation {
         this.name = name;
     }
 
-    public long getBtsStationId() {
-        return btsStationId;
+    public long getIdBtsStation() {
+        return idBtsStation;
     }
 
     public String getName() {

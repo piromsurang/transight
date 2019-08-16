@@ -10,7 +10,7 @@ public class MrtPrice {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long mrtPriceId;
+    private long idMrtPrice;
 
     private String mrtDeparture;
     private String mrtDestination;
@@ -37,8 +37,8 @@ public class MrtPrice {
         this.mrtPrice = mrtPrice;
     }
 
-    public long getMrtPriceId() {
-        return mrtPriceId;
+    public long getIdMrtPrice() {
+        return idMrtPrice;
     }
 
     public String getMrtDeparture() {

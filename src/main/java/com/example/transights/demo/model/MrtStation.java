@@ -10,7 +10,7 @@ public class MrtStation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long mrtId;
+    private long idMrt;
 
     private String name;
 
@@ -21,8 +21,8 @@ public class MrtStation {
         this.name = name;
     }
 
-    public long getMrtId() {
-        return mrtId;
+    public long getIdMrt() {
+        return idMrt;
     }
 
     public String getName() {

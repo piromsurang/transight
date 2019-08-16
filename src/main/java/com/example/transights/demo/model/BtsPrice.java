@@ -11,7 +11,7 @@ public class BtsPrice {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long btsPriceId;
+    private long idBtsPrice;
 
     private String btsDeparture;
     private String btsDestination;
@@ -26,12 +26,12 @@ public class BtsPrice {
         this.btsPrice = btsPrice;
     }
 
-    public long getBtsPriceId() {
-        return btsPriceId;
+    public long getIdBtsPrice() {
+        return idBtsPrice;
     }
 
-    public void setBtsPriceId(long btsPriceId) {
-        this.btsPriceId = btsPriceId;
+    public void setIdBtsPrice(long idBtsPrice) {
+        this.idBtsPrice = idBtsPrice;
     }
 
     public String getBtsDeparture() {

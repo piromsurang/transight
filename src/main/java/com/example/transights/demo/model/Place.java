@@ -10,23 +10,23 @@ public class Place {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long placeId;
+    private long id;
 
     private String name;
-    private long btsId;
-    private long mrtId;
+    private long idBts;
+    private long idMrt;
 
     public Place() {
     }
 
-    public Place(String name, long btsId, long mrtId) {
+    public Place(String name, long idBts, long idMrt) {
         this.name = name;
-        this.btsId = btsId;
-        this.mrtId = mrtId;
+        this.idBts = idBts;
+        this.idMrt = idMrt;
     }
 
-    public long getPlaceId() {
-        return placeId;
+    public long getId() {
+        return id;
     }
 
     public String getName() {
@@ -37,19 +37,19 @@ public class Place {
         this.name = name;
     }
 
-    public long getBtsId() {
-        return btsId;
+    public long getIdBts() {
+        return idBts;
     }
 
-    public void setBtsId(long btsId) {
-        this.btsId = btsId;
+    public void setIdBts(long idBts) {
+        this.idBts = idBts;
     }
 
-    public long getMrtId() {
-        return mrtId;
+    public long getIdMrt() {
+        return idMrt;
     }
 
-    public void setMrtId(long mrtId) {
-        this.mrtId = mrtId;
+    public void setIdMrt(long idMrt) {
+        this.idMrt = idMrt;
     }
 }
